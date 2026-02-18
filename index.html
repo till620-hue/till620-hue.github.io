@@ -23,6 +23,44 @@
             display: flex;
             background-color: rgb(57, 70, 107);
         }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color: rgb(97, 146, 196);
+            color: black;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: rgb(79, 89, 224);
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: rgba(83, 22, 22, 0.637);
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(13, 32, 83, 0.377);
+        }
+
+
         h1{
             border:2px solid rgb(0, 63, 126);
         }
@@ -30,14 +68,38 @@
         body{
             background-color: rgb(177, 215, 255);
         }
+
+        @media screen and (max-width: 700px) {
+            .container, .navbar {
+                flex-direction: column;
+            }
+            
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div style="background-color: rgb(57, 70, 107); padding: 5px; text-align: center;"><header>Portfolio</header></div>
-    <h1 style="background-color: rgb(118, 184, 249);">( ● ' ◡ ' ● ) say you swear rn</h1>
+    <div style="background-color: rgb(57, 70, 107); padding: 5px; text-align: center;">
+        <header>Portfolio</header>
+    </div>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#strayKids">stray kids</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="side">
+            <h2>About Me</h2>
+            <p>stray kids everywhere all around the world</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Main</h1>
+        <p>text</p>
     <img src="download.jpg" alt="han meme" width="300" height="400">
     <img src="choso.jpeg" alt="choso meme" width="300" height="400">
     <img src="download (3).jpg" alt="baby meme" width="300" height="400">
@@ -49,10 +111,6 @@
     </audio>
        
     <!--navagation bar-->
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
+    
 </body>
 </html>
