@@ -6,39 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        *{
-            box-sizing: border-box;
-        }
-    
-        .navbar{
-            display: flex;
-            background-color: rgb(123, 158, 133);
-            position: sticky;
-            top: 0;
-            left: 0;
-            margin-left: auto;
-            height: 45px;
-            width: 365px;
-            border-radius: 30px;
-        }
-
-        .navbar a{
-            color: rgb(252, 232, 255);
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 30px;
-        }
-
-        .navbar a:hover{
-            background-color: rgb(255,232,232);
-            color: rgb(123, 158, 133);
-        }
         .container{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         .side {
@@ -53,33 +25,39 @@
             padding: 20px;
         }
 
-        footer {
-            padding: 20px;
-            text-align: center;
-            background-color: rgba(13, 32, 83, 0.377);
+        .w-100 {
+            width: 100% !important;
+        }
+        
+        .d-flex {
+            display: flex !important;
         }
 
-        body {
-            background-color: #fcf9ea;
-            text-shadow: 2px 2px 4px rgb(255, 255, 255);
-            margin: 0;
+        .mb-0 {
+            margin-bottom: 0 !important;
         }
+
+        .h3, h3 {
+            font-size: calc(1.3rem + 0.6vw);
+        }
+
+        
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expend-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Portfolio</h3>
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     <a class="nav-link" href="JYP.html">About</a>
                     <a class="nav-link" href="#contacts">Contact</a>
                     <a class="nav-link" href="straykids.html">stray kids</a>
                 </div>
+            </div>
+        </header>
+    </div>
             </div>
         </div>
     </nav>

@@ -5,6 +5,7 @@
         body {
             background-color: #fcf9ea;
             text-shadow: 2px 2px 4px rgb(255, 255, 255);
+            margin: 0;
         }
 
         header{
@@ -41,6 +42,7 @@
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            border-radius: 30px;
         }
 
         .navbar a:hover{
