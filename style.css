@@ -1,4 +1,4 @@
- *{
+       *{
             box-sizing: border-box;
         }
 
@@ -17,15 +17,24 @@
             color: white;
         }
 
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
         .navbar{
             display: flex;
             background-color: rgb(123, 158, 133);
             position: sticky;
-            top: 80px;
-            width: 360px;
-            border-radius: 30px;
+            top: 0;
+            left: 0;
+            margin-left: auto;
+            height: 45px;
+            width: 365px;
+            border-radius: 30px;;
         }
-
 
         .navbar a{
             color: rgb(252, 232, 255);
@@ -60,10 +69,6 @@
             padding: 20px;
             background-color: rgb(107, 141, 117);
             color: rgb(255, 243, 243);
-        }
-
-        h1 {
-            border:3px solid rgb(123, 158, 133);
         }
 
         .image {
