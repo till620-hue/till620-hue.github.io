@@ -27,17 +27,6 @@
         img:hover {
             opacity: 1;
         }
-        .navbar{
-            display: flex;
-            background-color: rgb(123, 158, 133);
-            position: sticky;
-            top: 0;
-            left: 0;
-            margin-left: auto;
-            height: 45px;
-            width: 365px;
-            border-radius: 30px;;
-        }
 
         .navbar a{
             color: rgb(252, 232, 255);

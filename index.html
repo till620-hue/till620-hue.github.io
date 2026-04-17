@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* RESET */
+
+        * {
+            margin: 0;
+        }
         .container{
             display: flex;
             flex-wrap: wrap;
@@ -25,43 +33,31 @@
             padding: 20px;
         }
 
-        .w-100 {
-            width: 100% !important;
-        }
-        
-        .d-flex {
-            display: flex !important;
-        }
-
-        .mb-0 {
-            margin-bottom: 0 !important;
-        }
-
-        .h3, h3 {
-            font-size: calc(1.3rem + 0.6vw);
-        }
-
-        
     </style>
 </head>
 <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">Portfolio</h3>
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="JYP.html">About</a>
-                    <a class="nav-link" href="#contacts">Contact</a>
-                    <a class="nav-link" href="straykids.html">stray kids</a>
-                </div>
-            </div>
-        </header>
-    </div>
-            </div>
+    <header class="header">
+        <div class="header._content">
+           <a href="index.html" class"logo">
+               <img src="bunnysig.png" class="logo_img">
+           </a>
+           <nav class="nav">
+             <ul class="nav_list">
+               <li class="nav_item">
+                  <a href="#" class="nav_link">contacts</a>
+               </li>
+               <li class="nav_item">
+                  <a href="#" class="nav_link">projects</a>
+               </li>
+               <li class="nav_item">
+                  <a href="straykids.html" class="btn">Stray kids</a>
+               </li>
+             </ul>
+           </nav>
         </div>
-    </nav>
 
+    </header>
+        
     <div class="container">
         <div class="side">
             <h1>Welcome, I'm Evolet, a Future Software Developer!</h1>
