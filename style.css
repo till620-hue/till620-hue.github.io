@@ -3,16 +3,18 @@
         }
 
         body {
-            background-image: url(clouds.png);
-            background-size: 800px 3000px;
+            font-family: 'Parisienne', cursive;
+            background-image: url(pascal-debrunner-8xkImX3so8U-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             background-attachment: fixed;
-            text-shadow: 2px 2px 4px rgb(255, 255, 255);
+            background-position: center center;
             margin: 0;
         }
 
         header{
             box-sizing: border-box;
-            background-color: rgb(113, 145, 122);
+            background-color: rgb(113, 145, 122, 0.4);
             text-align: center;
             padding: 20px;
             font-style: italic; 
@@ -85,9 +87,17 @@
             border-radius: 15px;
         }
 
-        @media screen and (max-width: 700px) {
-            .container, .navbar {
+       /*media query*/
+        @media (max-width: 650px) {
+            .header_content {
                 flex-direction: column;
+                height: auto;
+                padding: 25px 0;
+                row-gap: 15px;
             }
-            
+
+            .nav_list {
+                flex-direction: column;
+                column-gap: 20px;
+            }
         }
