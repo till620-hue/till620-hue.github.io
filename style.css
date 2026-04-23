@@ -26,10 +26,9 @@ body {
     background-color: rgba(19, 22, 26, 0.685); 
     font-size: 25px;
     color: white;
-}
-
-img {
-    opacity: 0.8;
+    position: sticky;
+    top: 0px;
+    z-index: 0;
 }
 
 img:hover {
