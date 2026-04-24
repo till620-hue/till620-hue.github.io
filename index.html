@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -15,6 +14,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         ul {
@@ -110,7 +113,7 @@
             }
         }
 
-        .container {
+        .intro {
             animation: fade-inout 4s ease-in-out;
             font-size: 40px;
             text-align: center;
@@ -119,16 +122,33 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-image: url(swirls.png);
-            background-repeat: no-repeat;
-            background-size: 350px 600px;
-            background-position: -60px 380px;
+            background-image: url(swirls.png), url(swirls2.png);
+            background-repeat: no-repeat, no-repeat;
+            background-size: 350px 600px, 240px 420px;
+            background-position: -60px 380px, 1660px 10px;
         }
 
         h1 {
             margin-top: 350px;
             color: azure; 
             text-shadow: 2px 2px 4px rgba(124, 177, 255, 0.959);
+        }
+
+        .side {
+            flex: 30%;
+            background-color: rgba(19, 22, 26, 0.6);
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(229, 233, 253);
+        }
+
+        .main {
+            flex: 70%;
+            background-color: rgba(19, 22, 26, 0.6);
+            font-size: 30px;
+            color: rgb(229, 233, 253);
+            text-align: center;
         }
 
         /*media query*/
@@ -145,9 +165,11 @@
                 column-gap: 10px;
             }
 
-            .container {
+            .intro {
                 font-size: 17px;
                 height: 500px;
+                background-size: 280px 330px, 140px 320px;
+                background-position: -60px 230px, 490px 10px;
             }
 
             h1 {
@@ -160,39 +182,27 @@
             }
         }
 
-        .side {
-            flex: 30%;
-            background-color: rgba(19, 22, 26, 0.6);
-            padding: 20px;
-            text-align: center;
-            font-size: 30px;
-            color: rgb(229, 233, 253);
-        }
-
-        .main {
-            flex: 70%;
-            background-color: rgba(19, 22, 26, 0.6);
-            padding: 20px;
-        }
-
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header_content">
-           <a href="index.html">
+           <a href="#Home">
                <img src="bunnysign.png" class="logo_img">
            </a>
            <nav class="nav">
              <ul class="nav_list">
-               <li class="nav_item">
-                  <a href="#" class="nav_link">contacts</a>
+                <li class="nav_item">
+                  <a href="#projects" class="nav_link">projects</a>
                </li>
                <li class="nav_item">
-                  <a href="#" class="nav_link">projects</a>
+                  <a href="#achievements" class="nav_link">achievements</a>
                </li>
                <li class="nav_item">
-                  <a href="straykids.html" class="btn">Stray kids</a>
+                  <a href="#contact" class="nav_link">contacts</a>
+               </li>
+               <li class="nav_item">
+                  <a href="#profile" class="btn">Profile</a>
                </li>
              </ul>
            </nav>
@@ -200,14 +210,37 @@
 
     </header>
         
-    <div class="container">
+    <div class="intro" id="Home">
         <h1>Hello, I'm Evolet, a Future Software Developer!</h1>
     </div>
     
-    <div class="main">
-        <h1>under</h1>
+    <div class="container" id="projects">
+        <div class="side">
+        <h1>infromation</h1>
+        <p>text</p>
+        </div>
+        <div class="main">
+         <h1>projects</h1>
+         <p>text</p>
+        </div>
+    </div>
+    <div class="achievements" id="achievements">
+        <h1>achievements</h1>
         <p>text</p>
     </div>
+    <div class="contact" id="contact">
+        <h1>contact</h1>
+        <p>text</p>
+    </div>
+    <div class="Profile" id="profile">
+        <h1>Profile
+        </h1>
+        <p>text</p>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Evolet Gutierrez. All rights reserved.</p>
+    </div>
+
        
     
 </body>
