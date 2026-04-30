@@ -9,11 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* RESET */
-
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -134,21 +132,58 @@
             text-shadow: 2px 2px 4px rgba(124, 177, 255, 0.959);
         }
 
-        .side {
-            flex: 30%;
-            background-color: rgba(19, 22, 26, 0.6);
-            padding: 20px;
-            text-align: center;
-            font-size: 30px;
-            color: rgb(229, 233, 253);
-        }
-
         .main {
             flex: 70%;
             background-color: rgba(19, 22, 26, 0.6);
             font-size: 30px;
             color: rgb(229, 233, 253);
             text-align: center;
+        }
+
+        .profile, .achievements , .projects {
+            background-color: rgba(9, 33, 58, 0.308);
+            color: rgb(229, 233, 253);
+            font-size: 30px;
+            height: 800px;
+            margin: 0px;
+            
+        }
+
+        .contacts {
+            background-color: rgba(29, 71, 116, 0.555);
+            padding: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .links {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        h3 {
+            color: rgb(249, 250, 255);
+            font-size: 20px;
+            margin-left: 200px;
+        }
+
+        .contacts img {
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .contacts img:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .copyright {
+            background-color: rgba(19, 22, 26, 0.89);
+            color: white;
+            text-align: center;
+            padding: 30px;
         }
 
         /*media query*/
@@ -168,8 +203,8 @@
             .intro {
                 font-size: 17px;
                 height: 500px;
-                background-size: 280px 330px, 140px 320px;
-                background-position: -60px 230px, 490px 10px;
+                background-size: 280px 330px, 140px 260px;
+                background-position: -60px 230px, 450px 10px;
             }
 
             h1 {
@@ -211,37 +246,38 @@
     </header>
         
     <div class="intro" id="Home">
-        <h1>Hello, I'm Evolet, a Future Software Developer!</h1>
+        <h1>Hello, I'm Evolet a Future Software Developer!</h1>
     </div>
     
-    <div class="container" id="projects">
-        <div class="side">
-        <h1>infromation</h1>
+    <div class="projects" id="projects">
+        <h2>projects</h2>
         <p>text</p>
-        </div>
-        <div class="main">
-         <h1>projects</h1>
-         <p>text</p>
-        </div>
     </div>
     <div class="achievements" id="achievements">
-        <h1>achievements</h1>
+        <h2>achievements</h2>
         <p>text</p>
     </div>
-    <div class="contact" id="contact">
-        <h1>contact</h1>
+    <div class="profile" id="profile">
+        <h2>Profile</h2>
         <p>text</p>
     </div>
-    <div class="Profile" id="profile">
-        <h1>Profile
-        </h1>
-        <p>text</p>
+    <div class="contacts" id="contact">
+        <div class ="links">
+            <a href="https://www.linkedin.com/in/evolet-gutierrez-0638753a7/" target="_blank" class="links">
+                <img src="in.png" style="height: 65px; width: 65px; margin-right: 20px;">
+            </a>
+            <a href="https://github.com/till620-hue" target="_blank" class="links">
+                <img src="githublogo.png" style="height: 70px; width: 75px; margin-right: 20px;">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjDNJbmQgLZbkKwBMHNJQJpJdXljDzbxKtCKTCvpxDVMbShTpGQPTLrcWTRSPnnGWRxqKp" target="_blank" class="links">
+                <img src="emaillogo.png" style="height: 75px; width: 75px;">
+            </a>
+            
+        </div>
+        <h3 class="phone">Phone: 602-727-0872</h3>
     </div>
     <div class="copyright">
-        <p>Copyright © 2024 Evolet Gutierrez. All rights reserved.</p>
-    </div>
-
-       
-    
+        <p>Copyright © 2026 Evolet Gutierrez. All rights reserved.</p>
+    </div>   
 </body>
 </html>
