@@ -36,7 +36,7 @@
             background-attachment: fixed;
             background-position: center center;
         }
-
+        /*header and nav bar*/
         .header{
             background-color: rgba(19, 22, 26, 0.685); 
             font-size: 25px;
@@ -101,7 +101,7 @@
             color: rgb(0, 16, 105);
         }
 
-        /*animation for the text*/
+        /*animation for the text intro*/
         @keyframes fade-inout{
             0% {
                 opacity: 0;
@@ -139,7 +139,7 @@
             color: rgb(229, 233, 253);
             text-align: center;
         }
-
+        /*profile, achievements, and projects sections*/
         .profile, .achievements , .projects {
             background-color: rgba(9, 33, 58, 0.308);
             color: rgb(229, 233, 253);
@@ -157,6 +157,74 @@
             justify-content: center;
 
         }
+        /*conact me section from*/
+        .contac-container {
+            background-color: rgba(34, 89, 148, 0.555);
+            color: rgb(229, 233, 253);
+            text-align: center;
+        }
+
+        .contac-container h2{
+            font-size: 30px;
+            padding: 50px;
+            font-size: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 650px;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border: #5977ff solid 2px;
+            box-shadow: 0 0 10px rgba(20, 49, 194, 0.8);
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            background-color: rgb(76, 96, 184);
+            color: rgb(255, 255, 255);
+            padding: 5px 40px;
+            border-radius: 100px;
+            font-size: 19px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin: 20px;
+            font-family: 'Parisienne', cursive;
+        }
+
+        button:hover {
+            background-color: rgb(146, 239, 255);
+            color: rgb(0, 16, 105);
+        }
+
+        label {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            width: 50%;
+            margin: 0 auto 40px auto;
+            border: 1px solid rgb(229, 233, 253);
+        }
 
         .links {
             display: flex;
@@ -169,12 +237,12 @@
             margin-left: 200px;
         }
 
-        .contacts img {
+        .links img {
             opacity: 0.5;
             transition: all 0.3s ease;
         }
 
-        .contacts img:hover {
+        .links img:hover {
             opacity: 1;
             transform: scale(1.1);
         }
@@ -261,7 +329,26 @@
         <h2>Profile</h2>
         <p>text</p>
     </div>
-    <div class="contacts" id="contact">
+    <div class="contac-container" id="contact">
+        <h2 style="font-size: 55px;">Contact Me</h2>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="contacts">
         <div class ="links">
             <a href="https://www.linkedin.com/in/evolet-gutierrez-0638753a7/" target="_blank" class="links">
                 <img src="in.png" style="height: 65px; width: 65px; margin-right: 20px;">
@@ -272,9 +359,8 @@
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjDNJbmQgLZbkKwBMHNJQJpJdXljDzbxKtCKTCvpxDVMbShTpGQPTLrcWTRSPnnGWRxqKp" target="_blank" class="links">
                 <img src="emaillogo.png" style="height: 75px; width: 75px;">
             </a>
-            <img src="phonologo.png" style="height: 75px; width: 75px;">
         </div>
-        <h3 class="phone">Phone: 602-727-0872</h3>
+        <h3 class="phone"><img src="phonelogo.png" style="height: 30px; width: 30px; margin-right: 10px;"> 602-727-0872</h3>
     </div>
     <div class="copyright">
         <p>Copyright © 2026 Evolet Gutierrez. All rights reserved.</p>
