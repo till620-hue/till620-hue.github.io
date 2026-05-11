@@ -30,7 +30,7 @@
 
         body {
             font-family: 'Parisienne', cursive;
-            background-image: url(pascal-debrunner-8xkImX3so8U-unsplash.jpg);
+            background-image: url(backgroundimg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -60,6 +60,11 @@
             display: block;
             height: 70px;
             width: 190px;
+        }
+
+        .logo_img:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
         }
 
         .nav {
@@ -139,27 +144,59 @@
             color: rgb(229, 233, 253);
             text-align: center;
         }
-        /*profile, achievements, and projects sections*/
-        .profile, .achievements , .projects {
-            background-color: rgba(9, 33, 58, 0.308);
+        /*projects, achievements, profile decor*/
+        .achievements, .profile, .projects {
+            background-color: rgb(9, 33, 58);
             color: rgb(229, 233, 253);
             font-size: 30px;
-            height: 800px;
+            height: 1200px;
             margin: 0px;
-            
+            text-align: center;
         }
 
+        .achievements h2, .profile h2, .projects h2 {
+            padding: 60px;
+            font-size: 70px;
+        }
+
+        .achievements p, .profile p, .projects p {
+            font-size: 35px;
+        }
+        
+        /*achievements section*/
+        .achievements .certifications {
+            margin: 20px;
+            border-radius: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .achievements .certifications:hover {
+            box-shadow: 0 12px 24px 0 rgba(223, 230, 255, 0.8);
+            border-radius: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .certifications {
+            size: 200px 300px;
+        }
+
+        .certifications {
+            width: clamp(400px, calc(100% - 70vw), 200px);
+            height: auto;
+        }
+
+        /*contact me section*/
         .contacts {
-            background-color: rgba(29, 71, 116, 0.555);
+            background-color: rgb(29, 71, 116);
             padding: 30px;
             align-items: center;
             display: flex;
             justify-content: center;
 
         }
-        /*conact me section from*/
+        /*conact me from*/
         .contac-container {
-            background-color: rgba(34, 89, 148, 0.555);
+            background-color: rgb(34, 89, 148);
             color: rgb(229, 233, 253);
             text-align: center;
         }
@@ -189,7 +226,7 @@
         input:focus, textarea:focus {
             outline: none;
             border: #5977ff solid 2px;
-            box-shadow: 0 0 10px rgba(20, 49, 194, 0.8);
+            box-shadow: 0 0 10px rgba(20, 49, 194, 0.521);
         }
 
         textarea {
@@ -248,7 +285,7 @@
         }
 
         .copyright {
-            background-color: rgba(19, 22, 26, 0.89);
+            background-color: rgb(19, 22, 26);
             color: white;
             text-align: center;
             padding: 30px;
@@ -283,6 +320,29 @@
                 height: 50px;
                 width: 135px
             }
+
+            .achievements, .profile, .projects {
+                font-size: 15px;
+                height: 700px;
+            }
+
+            .achievements h2, .profile h2, .projects h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+
+            hr {
+                width: 60%;
+            }
+
+            .certifications {
+                width: clamp(160px, calc(100% - 65vw), 300px);
+            }
+
+            .codewars {
+                height: 80px;
+                width: 200px;
+            }
         }
 
     </style>
@@ -295,9 +355,6 @@
            </a>
            <nav class="nav">
              <ul class="nav_list">
-                <li class="nav_item">
-                  <a href="#projects" class="nav_link">projects</a>
-               </li>
                <li class="nav_item">
                   <a href="#achievements" class="nav_link">achievements</a>
                </li>
@@ -316,19 +373,21 @@
     <div class="intro" id="Home">
         <h1>Hello, I'm Evolet a Future Software Developer!</h1>
     </div>
-    
-    <div class="projects" id="projects">
-        <h2>projects</h2>
-        <p>text</p>
-    </div>
+
     <div class="achievements" id="achievements">
-        <h2>achievements</h2>
-        <p>text</p>
+        <h2>Achievements</h2>
+        <hr>
+        <img class="certifications" src="python.png">
+        <img class="certifications" src="html8css.png">
+        <img class="certifications" src="csharp.png" >
+        <br>
+        <img class="codewars" src="codewars.png">
     </div>
     <div class="profile" id="profile">
         <h2>Profile</h2>
         <p>text</p>
     </div>
+
     <div class="contac-container" id="contact">
         <h2 style="font-size: 55px;">Contact Me</h2>
         <hr>
@@ -362,6 +421,8 @@
         </div>
         <h3 class="phone"><img src="phonelogo.png" style="height: 30px; width: 30px; margin-right: 10px;"> 602-727-0872</h3>
     </div>
+
+
     <div class="copyright">
         <p>Copyright © 2026 Evolet Gutierrez. All rights reserved.</p>
     </div>   
