@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -145,11 +146,20 @@
             text-align: center;
         }
         /*projects, achievements, profile decor*/
-        .achievements, .profile, .projects {
+        .achievements{
             background-color: rgb(9, 33, 58);
             color: rgb(229, 233, 253);
             font-size: 30px;
             height: 1200px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: rgb(9, 33, 58);
+            color: rgb(229, 233, 253);
+            font-size: 30px;
+            height: 1650px;
             margin: 0px;
             text-align: center;
         }
@@ -162,7 +172,43 @@
         .achievements p, .profile p, .projects p {
             font-size: 35px;
         }
-        
+        /*font cherry for profile section*/
+        .cherry-swash-regular {
+            font-family: "Cherry Swash", serif;
+            font-weight: 400;
+            font-size: 30px;
+            font-style: normal;
+        }
+
+         .cherry-swash-bold {
+            font-family: "Cherry Swash", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        /*profile section*/
+        .aboutme {
+            width: 70%;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 25px;
+            font-family: 'Cherry Swash', serif;
+        }
+
+        .font {
+            font-family: 'Cherry Swash', serif;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        .skills-list, .experience-list, .education-list, .languages-list {
+            width: 70%;
+            margin: 0 auto;
+            padding: 15px;
+            font-family: 'Cherry Swash', serif;
+            text-align: middle;
+            font-size: 23px;
+        }
         /*achievements section*/
         .achievements .certifications {
             margin: 20px;
@@ -176,6 +222,12 @@
             transition: all 0.2s ease;
         }
 
+        .codewars:hover {
+            box-shadow: 0 12px 24px 0 rgba(158, 176, 255, 0.8);
+            border-radius: 14px;
+            transition: all 0.2s ease;
+        }
+
         .certifications {
             size: 200px 300px;
         }
@@ -183,6 +235,41 @@
         .certifications {
             width: clamp(400px, calc(100% - 70vw), 200px);
             height: auto;
+        }
+
+        .codewars {
+            width: clamp(600px, calc(100% - 70vw), 200px);
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /*projects section*/
+        .projects {
+            background-color: rgb(9, 33, 58);
+            color: rgb(229, 233, 253);
+            font-size: 30px;
+            height: 1200px;
+            margin: 0px;
+            text-align: center;
+            height: 1200px;
+        }
+        .smilegif {
+            width: clamp(300px, calc(100% - 70vw), 200px);
+            height: auto;
+            margin-top: 20px;
+            border: 5px solid rgb(209, 217, 255);
+            border-radius: 50px;
+            float: left;
+            margin-left: 190px;
+        }
+
+        .projects p {
+            width: 50%;
+            margin: 10px auto;
+            padding: 20px;
+            font-family: 'Cherry Swash', serif;
+            text-align: middle;
+            font-size: 20px;
         }
 
         /*contact me section*/
@@ -202,9 +289,8 @@
         }
 
         .contac-container h2{
-            font-size: 30px;
-            padding: 50px;
-            font-size: 40px;
+            font-size: 80px;
+            padding: 60px;
         }
 
         .form-group {
@@ -237,13 +323,14 @@
         button {
             background-color: rgb(76, 96, 184);
             color: rgb(255, 255, 255);
-            padding: 5px 40px;
+            padding: 10px 50px;
             border-radius: 100px;
-            font-size: 19px;
+            font-size: 20px;
             border: none;
             cursor: pointer;
             transition: 0.3s ease;
-            margin: 20px;
+            margin-top: 20px;
+            margin-bottom: 35px;
             font-family: 'Parisienne', cursive;
         }
 
@@ -253,8 +340,8 @@
         }
 
         label {
-            font-size: 25px;
-            margin-bottom: 10px;
+            font-size: 30px;
+            margin-bottom: 13px;
         }
 
         hr {
@@ -265,18 +352,20 @@
 
         .links {
             display: flex;
-            column-gap: 30px;
+            column-gap: 70px;
         }
 
         h3 {
             color: rgb(249, 250, 255);
-            font-size: 20px;
+            font-size: 29px;
             margin-left: 200px;
         }
 
         .links img {
             opacity: 0.5;
             transition: all 0.3s ease;
+            height: 100px;
+            width: 100px;
         }
 
         .links img:hover {
@@ -321,9 +410,30 @@
                 width: 135px
             }
 
-            .achievements, .profile, .projects {
+            .experience-list, .education-list, .skills-list, .languages-list {
+                width: 70%;
+                font-size: 13px;
+                padding: 5px;
+            }
+
+            .aboutme {
+                width: 80%;
+                font-size: 13px;
+                padding: 5px;
+            }
+
+            .font {
+                font-size: 16px;
+            }
+
+            .achievements, .projects {
                 font-size: 15px;
                 height: 700px;
+            }
+
+            .profile {
+                font-size: 15px;
+                height: 950px;
             }
 
             .achievements h2, .profile h2, .projects h2 {
@@ -343,11 +453,81 @@
                 height: 80px;
                 width: 200px;
             }
+
+            .contact-container{
+                font-size: 5px;
+                padding: -5px;
+                font-size: 15px;
+            }
+
+            .contac-container h2 {
+                font-size: 29px;
+                padding: 18px;
+            }
+
+            .form-group {
+                margin-bottom: 10px;
+            }
+    
+            input[type="text"], input[type="email"], textarea {
+                width: 260px;
+                height: 5px;
+                padding: 8px;
+            }
+
+            .form-group {
+                font-size: 8px;
+            }
+
+            textarea {
+                height: 40px;
+            }
+
+            button {
+                padding: 5px 25px;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+            label {
+                font-size: 18px;
+                margin-bottom: 2px;
+            }
+
+            hr {
+                width: 80%;
+                margin: 0 auto 20px auto;
+            }
+
+            .links {
+                column-gap: 50px;
+            }
+
+            .links img {
+                height: 50px;
+                width: 60px;
+            }
+    
+            h3 {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+
+            .contacts {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+            
+            .copyright {
+                font-size: 12px;
+                padding: 20px;
+            }
         }
 
     </style>
 </head>
 <body>
+    <!--header and nav bar-->
     <header class="header">
         <div class="header_content">
            <a href="#Home">
@@ -357,6 +537,9 @@
              <ul class="nav_list">
                <li class="nav_item">
                   <a href="#achievements" class="nav_link">achievements</a>
+               </li>
+               <li class="nav_item">
+                  <a href="#projects" class="nav_link">projects</a>
                </li>
                <li class="nav_item">
                   <a href="#contact" class="nav_link">contacts</a>
@@ -369,11 +552,61 @@
         </div>
 
     </header>
-        
+    <!--intro section-->
     <div class="intro" id="Home">
         <h1>Hello, I'm Evolet a Future Software Developer!</h1>
     </div>
-
+    <!--profile section-->
+    <div class="profile" id="profile">
+        <h2>Profile</h2>
+        <hr>
+        <h5 class="aboutme">Motivated and detail-oriented Software Developer with skills in Html and css, python, and C#.  Equipped with strong foundation in software development, passionate about continuous learning and building user focused applications in a game company.</h5>
+        <div>
+           <h4 class="font">Skills:</h4>
+            <ul class="skills-list">
+                <li>Web/App: HTML, CSS</li>
+                <li>Programming: Python, C#</li>
+                <li>Database: SQL</li>
+                <li>Tools: Git, Visual Studio</li>
+                <li>Soft Skills: Communication, Collaboration</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font">Experience:</h4>
+            <ul class="experience-list">
+                <li>EVIT(software & App Design)</li>
+                    <ul class="experience">
+                        <li>2025-2026</li>
+                        <li>Got certified in Html & CSS, python, and C#. Was abe to nuild leadership skills and teamwork, being able to turn stuff in on time along with learn new soft skills.</li>
+                    </ul>
+                <li>WILLIS JR. HIGH (web design)</li>
+                    <ul class="experience">
+                        <li>2021-2023</li>
+                        <li>Created a website for the school using HTML and CSS. Learned how to work with a team and meet deadlines.</li>
+                    </ul>
+                </ul>
+             <h4 class="font">Education:</h4>
+            <ul class="education-list">
+                <li>CHANDLER HIGH</li>
+                    <ul>
+                        <li>2025-2027</li>
+                        <li>Chandler high school, 350 N Arizona Ave, Chandler, AZ 85225</li>
+                    </ul>
+                <li>EAST VALLEY INSTITUTE OF TECHNOLOGY</li>
+                     <ul>
+                        <li>2025-2026</li>
+                        <li>East Valley Institute of Technology, 1601 W Main St, Chandler, AZ 85225</li>
+                        <li>GPA: 3.67</li>
+                     </ul>
+            </ul>
+            <h4 class="font">Languages:</h4>
+            <ul class="languages-list">
+                <li>English (Fluent)</li>
+                <li>Spanish (Fluent)</li>
+            </ul>
+        </div>   
+    </div>
+    <!--achievements section-->
     <div class="achievements" id="achievements">
         <h2>Achievements</h2>
         <hr>
@@ -381,15 +614,21 @@
         <img class="certifications" src="html8css.png">
         <img class="certifications" src="csharp.png" >
         <br>
-        <img class="codewars" src="codewars.png">
+        <a href="https://www.codewars.com/users/till620-hue" target="_blank">
+            <img class="codewars" src="codename.png">
+        </a>
     </div>
-    <div class="profile" id="profile">
-        <h2>Profile</h2>
-        <p>text</p>
+    <!--projects section-->
+    <div class="projects" id="  projects">
+        <h2>Projects</h2>
+        <hr>
+        <img src="smile.gif" class="smilegif">
+        <h4>Animater</h4>
+        <p>I am a software development student with experience in animation, front-end development, and digital design. I enjoy combining creativity with technology to create engaging visual and interactive projects. Skilled in animation with hands-on experience creating visual and digital media projects.</p>
     </div>
-
+    <!--contact me form-->
     <div class="contac-container" id="contact">
-        <h2 style="font-size: 55px;">Contact Me</h2>
+        <h2 class="titleme">Contact Me</h2>
         <hr>
         <form>
             <div class="form-group">
@@ -407,22 +646,22 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <!--contact info-->
     <div class="contacts">
         <div class ="links">
             <a href="https://www.linkedin.com/in/evolet-gutierrez-0638753a7/" target="_blank" class="links">
-                <img src="in.png" style="height: 65px; width: 65px; margin-right: 20px;">
+                <img src="in.png" >
             </a>
             <a href="https://github.com/till620-hue" target="_blank" class="links">
-                <img src="githublogo.png" style="height: 70px; width: 75px; margin-right: 20px;">
+                <img src="githublogo.png">
             </a>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjDNJbmQgLZbkKwBMHNJQJpJdXljDzbxKtCKTCvpxDVMbShTpGQPTLrcWTRSPnnGWRxqKp" target="_blank" class="links">
-                <img src="emaillogo.png" style="height: 75px; width: 75px;">
+                <img src="emaillogo.png">
             </a>
         </div>
         <h3 class="phone"><img src="phonelogo.png" style="height: 30px; width: 30px; margin-right: 10px;"> 602-727-0872</h3>
     </div>
-
-
+    <!--footer-->
     <div class="copyright">
         <p>Copyright © 2026 Evolet Gutierrez. All rights reserved.</p>
     </div>   
